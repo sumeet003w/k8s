@@ -8,4 +8,19 @@ Kube-schedular 10259
 Kube-controller-manager 10257
 Worker nodes expose services 30000-32767
 ETCD 2379
-If multiple masters, then alongwith above., etcd on both at 2380.
+If multiple masters, then alongwith above., etcd on both at 2380 i.e peer to peer connectivity bw control nodes
+
+Commands related to n/w in a node
+ip addr
+ip route
+netstat --help
+
+Pod networking
+Networking at  the pod level
+A cluster will soon have pods and services running on it. how these pods are going to communicate with each other
+How do you access the services running on the pods within the cluster or externally from theoutside of the cluster
+So as of today K8s does not come with a built in solution fo this.
+Many nw solutions available that does this. Celium calico
+
+
+
