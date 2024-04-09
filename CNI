@@ -1,0 +1,11 @@
+CNI: Is a set of standards that define how programs should be developed to solve the networking challenges in a container runtime environment. These programs are called plugins.
+Some 3rd party plugins are celium calico weave.
+These container runtimes implements CNI standards.  
+
+Kube-api server listens on 6443
+Kubelet 10250
+Kube-schedular 10259
+Kube-controller-manager 10257
+Worker nodes expose services 30000-32767
+ETCD 2379
+If multiple masters, then alongwith above., etcd on both at 2380.
